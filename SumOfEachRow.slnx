@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="CountEvenNumbersMatrix/CountEvenNumbersMatrix.csproj" />
+  <Project Path="LargestNumberMatrix/LargestNumberMatrix.csproj" />
+  <Project Path="MatrixDiagonalSum/MatrixDiagonalSum.csproj" />
+  <Project Path="MatrixRotate90Degrees/MatrixRotate90Degrees.csproj" />
+  <Project Path="SumOfEachRow/SumOfEachRow.csproj" />
+</Solution>
