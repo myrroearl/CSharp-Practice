@@ -1,16 +1,11 @@
 ﻿using System;
 
-class MatrixRotate90Degrees {
+class MatrixRotate90Degress {
     public static void Main(String[] args) {
-        /*To do this problem we should do 2 step
-        1. Transposed the given array
-        2. Reverse the row of the transposed array
-        = To get the Rotated90Degrees of the given array
-        */
         int[,] matrix = {
-            {1,2,3,4},
-            {5,6,7,8},
-            {9,10,11,12}
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
         };
 
         int[,] transposedArr = new int[matrix.GetLength(1),matrix.GetLength(0)];
@@ -21,25 +16,22 @@ class MatrixRotate90Degrees {
             }
         }
 
-        Console.WriteLine("Transposed Array:");
-
         for (int i = 0; i < transposedArr.GetLength(0); i++) {
             for (int j = 0; j < transposedArr.GetLength(1); j++) {
                 Console.Write(transposedArr[i,j] + " ");
             }
             Console.WriteLine();
         }
-
-        //reverse rows
+        
         for (int i = 0; i < transposedArr.GetLength(0); i++) {
-            for (int j = 0; j < transposedArr.GetLength(1)/2; j++) {
-                int temp = transposedArr[i,j];
-                transposedArr[i,j] = transposedArr[i,j+transposedArr.GetLength(1)-1];
-                transposedArr[i,j+transposedArr.GetLength(1)-1] = temp;
+            for (int j = 0; j < transposedArr.GetLength(1) / 2; j++) {
+                int temp = transposedArr[i, j];
+                transposedArr[i,j] = transposedArr[i,transposedArr.GetLength(1) - j - 1];
+                transposedArr[i, transposedArr.GetLength(1) - j - 1] = temp;
             }
         }
-
-        Console.WriteLine("Rotate 90 Degrees Array:");
+        Console.WriteLine();
+        Console.WriteLine();
         for (int i = 0; i < transposedArr.GetLength(0); i++) {
             for (int j = 0; j < transposedArr.GetLength(1); j++) {
                 Console.Write(transposedArr[i,j] + " ");
