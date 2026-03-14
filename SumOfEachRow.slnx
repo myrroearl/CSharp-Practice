@@ -4,5 +4,6 @@
   <Project Path="MatrixDiagonalSum/MatrixDiagonalSum.csproj" />
   <Project Path="MatrixRotate90Degrees/MatrixRotate90Degrees.csproj" />
   <Project Path="MatrixSpiralOrder/MatrixSpiralOrder.csproj" />
+  <Project Path="RemoveOutermostParentheses/RemoveOutermostParentheses.csproj" />
   <Project Path="SumOfEachRow/SumOfEachRow.csproj" />
 </Solution>
