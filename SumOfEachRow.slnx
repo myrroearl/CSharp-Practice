@@ -1,9 +1,46 @@
 <Solution>
+  <Folder Name="/WarmUps/">
+    <Project Path="WarmUps/CheckAnagramWarmup/CheckAnagramWarmup.csproj" />
+    <Project Path="WarmUps/LongestSubstring/LongestSubstring.csproj" />
+    <Project Path="WarmUps/StringCompress/StringCompress.csproj" />
+  </Folder>
+  <Folder Name="/WarmUps/Day2/">
+    <Project Path="WarmUps/Day2/CheckAnag/CheckAnag.csproj" />
+    <Project Path="WarmUps/Day2/CheckRotateTwoStrings/CheckRotateTwoStrings.csproj" />
+    <Project Path="WarmUps/Day2/CountOccurences/CountOccurences.csproj" />
+    <Project Path="WarmUps/Day2/FirstNonRepeating/FirstNonRepeating.csproj" />
+    <Project Path="WarmUps/Day2/LongestSub/LongestSub.csproj" />
+    <Project Path="WarmUps/Day2/ReplaceSpaces/ReplaceSpaces.csproj" />
+  </Folder>
+  <Project Path="BestTimeToBuyAndSellStock/BestTimeToBuyAndSellStock.csproj" />
+  <Project Path="CharacterFrequency/CharacterFrequency.csproj" />
+  <Project Path="CheckAnagram/CheckAnagram.csproj" />
+  <Project Path="CheckStringPalindrome/CheckStringPalindrome.csproj" />
+  <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
   <Project Path="CountEvenNumbersMatrix/CountEvenNumbersMatrix.csproj" />
+  <Project Path="CountOccurencesOfACharacter/CountOccurencesOfACharacter.csproj" />
+  <Project Path="CountUpperCaseLowerCaseDigits/CountUpperCaseLowerCaseDigits.csproj" />
+  <Project Path="CountVowelsInAString/CountVowelsInAString.csproj" />
+  <Project Path="FindMaxElement/FindMaxElement.csproj" />
+  <Project Path="FirstNonRepeatingCharacter/FirstNonRepeatingCharacter.csproj" />
   <Project Path="LargestNumberMatrix/LargestNumberMatrix.csproj" />
+  <Project Path="LongestSubstringWithoutRepeatingCharacters/LongestSubstringWithoutRepeatingCharacters.csproj" />
+  <Project Path="LongestWordInASentence/LongestWordInASentence.csproj" />
   <Project Path="MatrixDiagonalSum/MatrixDiagonalSum.csproj" />
   <Project Path="MatrixRotate90Degrees/MatrixRotate90Degrees.csproj" />
   <Project Path="MatrixSpiralOrder/MatrixSpiralOrder.csproj" />
+  <Project Path="MaximumSubarraySum/MaximumSubarraySum.csproj" />
+  <Project Path="MoveZerosToENd/MoveZerosToENd.csproj" />
+  <Project Path="RemoveDuplicateCharacters/RemoveDuplicateCharacters.csproj" />
+  <Project Path="RemoveDuplicates/RemoveDuplicates.csproj" />
   <Project Path="RemoveOutermostParentheses/RemoveOutermostParentheses.csproj" />
+  <Project Path="ReplaceSpaceWithDash/ReplaceSpaceWithDash.csproj" />
+  <Project Path="ReverseArray/ReverseArray.csproj" />
+  <Project Path="ReverseString/ReverseString.csproj" />
+  <Project Path="SecondLargestElement/SecondLargestElement.csproj" />
+  <Project Path="StringCompression/StringCompression.csproj" />
+  <Project Path="SubarrayWithGivenSum/SubarrayWithGivenSum.csproj" />
   <Project Path="SumOfEachRow/SumOfEachRow.csproj" />
+  <Project Path="TwoStringsRotation/TwoStringsRotation.csproj" />
+  <Project Path="TwoSum/TwoSum.csproj" />
 </Solution>
