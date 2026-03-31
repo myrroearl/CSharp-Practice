@@ -1,29 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 
 public class Program {
     public static void Main(String[] args) {
-        string s = "bbbbb";
+        string s = "pwwkew";
 
         Console.WriteLine(LongestSubstringWithoutRepeatingCharacters(s));
     }
 
     public static int LongestSubstringWithoutRepeatingCharacters(string s) {
+        int max = 0;
+        int start = 0;
+        int end = 0;
 
         HashSet<char> set = new HashSet<char>();
-        int max = 0;
 
-        for (int i = 0; i < s.Length; i++) {
+        while (end < s.Length) {
 
-            if (set.Contains(s[i])) {
-                max = Math.Max(max, set.Count);
-                set.Clear();
-                set.Add(s[i]);
+            if (set.Contains(s[end])) {
+                while (set.Contains(s[end])) {
+                set.Remove(s[start]);
+                start++;
+            }
             }
             else {
-                set.Add(s[i]);
+                set.Add(s[end]);
+                end++;
             }
+            
+            
+            
+            
+            max = Math.Max(max, end - start);
+
+            
         }
+
 
         return max;
     }
