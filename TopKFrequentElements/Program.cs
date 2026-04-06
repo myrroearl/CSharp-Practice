@@ -7,51 +7,47 @@ public class Program {
         int[] nums = [4,4,4,1,1,2,2,2,3];
         int k = 2;
 
-        List<int> list = TopKFreq(nums, k);
+        int[] arr = TopKFreq(nums, k);
 
-        foreach (int i in list) {
-            Console.Write(i + " ");
+        for (int i = 0; i < arr.Length; i++) {
+            Console.Write(arr[i] + " ");
         }
 
     }
 
-    public static List<int> TopKFreq(int[] nums, int k) {
+    public static int[] TopKFreq(int[] nums, int k) {
+
+       int[] arr = new int[k];
 
         Dictionary<int, int> map = new Dictionary<int, int>();
-        List<int> list = new List<int>();
-        Array.Sort(nums);
-
-        for (int i = 0; i < nums.Length / 2; i++) {
-            int temp = nums[i];
-            nums[i] = nums[nums.Length - i - 1];
-            nums[nums.Length - i - 1] = temp;
-        }
-
-        int max = 0;
 
         for (int i = 0; i < nums.Length; i++) {
+
             if (map.ContainsKey(nums[i])) {
                 map[nums[i]]++;
             }
             else {
                 map[nums[i]] = 1;
             }
-
+            
         }
 
-        foreach (var pair in map) {
-            if (pair.Value >= max) {
-                max = pair.Value;
-                list.Add(pair.Key);
-            } 
 
-            if (list.Count > k) {
-                list.Remove(list[0]);
+        var temp = map.ToList();
+
+        temp.Sort((a, b) => {
+            if (a.Value != b.Value) {
+                return b.Value.CompareTo(a.Value);
             }
+            return a.Key.CompareTo(b.Key);
+        });
+
+        
+        for (int i = 0; i < arr.Length; i++) {
+            arr[i] = temp[i].Key;
         }
 
-        list.Reverse();
-        return list;
+       return arr;
 
     }
 }

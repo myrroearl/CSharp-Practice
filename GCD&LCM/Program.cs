@@ -9,31 +9,19 @@ public class Program {
     }
 
     public static int GCD(int x, int y) {
-
-        int min = Math.Min(x, y);
-        int gcd = 0;
-
-        for (int i = 1; i <= min; i++) {
-            if (x % i == 0 && y % i == 0) {
-                gcd = i;
-            }
+        
+        while (x != 0) {
+            int temp = x;
+            x = y % x;
+            y = temp;
         }
 
-        return gcd;
+        return y;
+        
     }
 
     public static int LCM(int x, int y) {
 
-        int lcm = Math.Min(x, y);
-        int ctr = lcm;
-
-        while ((lcm % y != 0) || (lcm % x != 0)) {
-
-            lcm += ctr;
-
-        }
-        
-
-        return lcm;
+        return GCD(x, y) * GCD(x, y);
     }
 }
