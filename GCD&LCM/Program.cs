@@ -22,6 +22,6 @@ public class Program {
 
     public static int LCM(int x, int y) {
 
-        return GCD(x, y) * GCD(x, y);
+        return (x / GCD(x, y)) * y;
     }
 }
